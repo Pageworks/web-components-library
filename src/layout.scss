@@ -370,7 +370,7 @@ source-view-component
         {
             font-size: 0.875rem;
             border-radius: 0;
-            white-space: pre-wrap;
+            white-space: pre;
 
             &[data-view=CHANGELOG],
             &[data-view=README]
