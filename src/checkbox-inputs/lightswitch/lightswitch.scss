@@ -82,7 +82,8 @@ lightswitch-component
 			left: 0.25rem;
 			transform: translateY(-56%);
 
-            html.is-ie & {
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+            {
                 lightswitch-track{
                     display: none;
                 }
