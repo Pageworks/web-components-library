@@ -16,5 +16,9 @@
 	"text-inputs": [
 		"outline",
 		"solid"
+	],
+	"textareas": [
+		"outline",
+		"solid"
 	]
 }
