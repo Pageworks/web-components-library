@@ -1,0 +1,98 @@
+$gap: 1rem;
+$small-breakpoint: 768px;
+$medium-breakpoint: 1024px;
+
+.form-grid
+{
+	display: grid;
+	gap: $gap;
+	grid-template-rows: 1fr;
+
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+	{
+		display: block;
+
+		form-row
+		{
+			margin-bottom: $gap;
+
+			&:last-of-type
+			{
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	form-row
+	{
+		display: block;
+		width: 100%;
+
+		// IE 11
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+		{
+			display: flex !important;
+			flex-flow: row nowrap;
+
+			& > *
+			{
+				padding: 0 $gap/2;
+			}
+		}
+
+		// Column Layouts
+		&[columns="2"]
+		{
+			display: grid;
+			gap: $gap;
+			grid-template-columns: minmax(1px, 1fr);
+
+			@media (min-width: $small-breakpoint)
+			{
+				grid-template-columns: 1fr 1fr;
+			}
+		}
+
+		&[columns="3"]
+		{
+			display: grid;
+			gap: $gap;
+			grid-template-columns: minmax(1px, 1fr);
+
+			@media (min-width: $small-breakpoint)
+			{
+				grid-template-columns: 1fr 1fr 1fr;
+			}
+		}
+
+		&[columns="4"]
+		{
+			display: grid;
+			gap: $gap;
+			grid-template-columns: minmax(1px, 1fr);
+
+			@media (min-width: $medium-breakpoint)
+			{
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+			}
+		}
+
+		// Flexbox Layouts
+		&[flexbox]
+		{
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+
+			&[flexbox~="space-between"]
+			{
+				justify-content: space-between;
+			}
+
+			&[flexbox~="flex-end"]
+			{
+				justify-content: flex-end;
+			}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+$primary: #4a99ff;
+$primary-hover-opacity: rgba(74, 153, 255, 0.05);
+$primary-active-opacity: rgba(74, 153, 255, 0.1);
+$grey-2: #e9ecee;
+$grey-3: #879099;
+
+alt-outline-primary
+{
+	display: inline-block;
+	height: 2.25rem;
+	line-height: 2.125rem;
+	padding: 0 1rem;
+	border-radius: 0.125rem;
+	border-width: 1px;
+	border-style: solid;
+	text-transform: uppercase;
+	font-weight: 500;
+	user-select: none;
+	cursor: pointer;
+	font-size: 0.875rem;
+	min-width: 5rem;
+	background-color: transparent;
+	transition: background-color 75ms ease;
+
+	// Colors
+	border-color: $grey-2;
+	color: $primary;
+
+	&:hover
+	{
+		background-color: $primary-hover-opacity;
+		border-color: $grey-3;
+	}
+
+	&:active
+	{
+		background-color: $primary-hover-opacity;
+		border-color: $primary;
+	}
+}

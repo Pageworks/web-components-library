@@ -1,0 +1,35 @@
+{
+  "name": "web-components-library",
+  "version": "1.0.0",
+  "description": "Browse, demo, and download prebuilt web components based around the Atomic Design methodology.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pageworks/web-components-library.git"
+  },
+  "author": "Pageworks",
+  "license": "MIT",
+  "homepage": "https://github.com/pageworks/web-components-library",
+  "webDependencies": [],
+  "scripts": {
+    "build": "npm run compile && npm run preview",
+    "compile": "tsc && node ./compiler.config.js",
+    "preview": "http-server ./build/",
+    "deploy": "node ./deploy.config.js",
+    "create": "node ./generator.config.js"
+  },
+  "devDependencies": {
+    "archiver": "^3.1.1",
+    "chalk": "^2.4.2",
+    "clear": "^0.1.0",
+    "dotenv": "^8.1.0",
+    "gh-pages": "^2.1.1",
+    "glob": "^7.1.4",
+    "http-server": "^0.11.1",
+    "inquirer": "^7.0.0",
+    "node-sass": "^4.12.0",
+    "rollup": "^1.20.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "typescript": "^3.6.2"
+  }
+}

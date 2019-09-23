@@ -1,0 +1,25 @@
+<script type="module">
+	stylesheets = [...stylesheets, 'grids/form'];
+</script>
+
+<form class="form-grid" novalidate onsubmit="return false;">
+	<form-row>
+		<h2>Form Grid Example</h2>
+	</form-row>
+	<form-row>
+		<input type="email" value="full width">
+	</form-row>
+	<form-row columns="2">
+		<input type="text" value="two column">
+		<input type="text" value="split">
+	</form-row>
+	<form-row columns="3">
+		<input type="text" value="three">
+		<input type="text" value="column">
+		<input type="text" value="split">
+	</form-row>
+	<form-row flexbox="space-between">
+		<a href="#" onclick="return false;">link to something</a>
+		<button type="submit">Submit</button>
+	</form-row>
+</form>

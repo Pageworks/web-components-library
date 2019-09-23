@@ -1,0 +1,43 @@
+$white: #fff;
+$primary: #4a99ff;
+$primary-hover: hsl(214, 100%, 70%);
+$primary-active: hsl(214, 100%, 60%);
+
+raised-solid-primary
+{
+	display: inline-block;
+	height: 2.25rem;
+	line-height: 2.125rem;
+	padding: 0 1rem;
+	border-radius: 0.125rem;
+	border-width: 1px;
+	border-style: solid;
+	text-transform: uppercase;
+	font-weight: 500;
+	user-select: none;
+	cursor: pointer;
+	font-size: 0.875rem;
+	min-width: 5rem;
+	transform: translateY(0);
+	transition: background-color 75ms ease, transform 150ms ease;
+
+	// Config
+	border-color: $primary;
+	background-color: $primary;
+	color: $white;
+	box-shadow: 0 1px 3px rgba(51,51,15,0.15), 0 2px 6px rgba(51,51,15,0.15);
+
+	&:hover
+	{
+		background-color: $primary-hover;
+		border-color: $primary-hover;
+	}
+
+	&:active
+	{
+		background-color: $primary-active;
+		border-color: $primary-active;
+		box-shadow: 0 1px 3px rgba(51,51,15,0.3);
+		transform: translateY(2px);
+	}
+}

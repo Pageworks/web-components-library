@@ -1,0 +1,36 @@
+$primary: #4a99ff;
+$primary-hover-opacity: rgba(74, 153, 255, 0.05);
+$primary-active-opacity: rgba(74, 153, 255, 0.1);
+
+outline-primary
+{
+	display: inline-block;
+	height: 2.25rem;
+	line-height: 2.125rem;
+	padding: 0 1rem;
+	border-radius: 0.125rem;
+	border-width: 1px;
+	border-style: solid;
+	text-transform: uppercase;
+	font-weight: 500;
+	user-select: none;
+	cursor: pointer;
+	font-size: 0.875rem;
+	min-width: 5rem;
+	background-color: transparent;
+	transition: background-color 75ms ease;
+
+	// Colors
+	border-color: $primary;
+	color: $primary;
+
+	&:hover
+	{
+		background-color: $primary-hover-opacity;
+	}
+
+	&:active
+	{
+		background-color: $primary-active-opacity;
+	}
+}
