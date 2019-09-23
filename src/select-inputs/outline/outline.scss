@@ -12,13 +12,14 @@ outline-select-component
 
 	select
 	{
-		height: 56px;
+		height: 3.5rem;
 		min-width: 256px;
+		width: 100%;
 		font-size: 1rem;
 		border-radius: 0.25rem;
 		border-width: 1px;
 		border-style: solid;
-		padding: 0.875rem 1rem;
+		padding: 0.875rem 3rem 0.875rem 1rem;
 		text-overflow: ellipsis;
 		-webkit-appearance: none;
 		-moz-appearance: none;
@@ -37,7 +38,7 @@ outline-select-component
 		{
 			& + label
 			{
-				transform: translateY(-190%) scale(0.75);
+				transform: translateY(-45%) scale(0.75);
 			}
 		}
 
@@ -59,7 +60,7 @@ outline-select-component
 			& + label
 			{
 				color: $primary;
-				transform: translateY(-190%) scale(0.75);
+				transform: translateY(-45%) scale(0.75);
 			}
 		}
 
@@ -70,7 +71,7 @@ outline-select-component
 			& + label
 			{
 				color: $error;
-				transform: translateY(-190%) scale(0.75);
+				transform: translateY(-45%) scale(0.75);
 			}
 		}
 	}
@@ -78,10 +79,10 @@ outline-select-component
 	label
 	{
 		position: absolute;
-		top: 50%;
+		top: 0;
 		left: 0.75rem;
 		padding: 0 0.25rem;
-		transform: translateY(-50%);
+		transform: translateY(1.125rem);
 		transform-origin: left center;
 		user-select: none;
 		pointer-events: none;

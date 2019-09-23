@@ -8,12 +8,12 @@ $error: #f86a6a;
 outline-input-component
 {
 	display: inline-block;
-	width: 100%;
 
 	input
 	{
-		height: 56px;
+		height: 3.5rem;
 		min-width: 256px;
+		width: 100%;
 		font-size: 1rem;
 		border-radius: 0.25rem;
 		border-width: 1px;
@@ -29,7 +29,7 @@ outline-input-component
 		{
 			& + label
 			{
-				transform: translateY(-190%) scale(0.75);
+				transform: translateY(-45%) scale(0.75);
 			}
 		}
 
@@ -51,7 +51,7 @@ outline-input-component
 			& + label
 			{
 				color: $primary;
-				transform: translateY(-190%) scale(0.75);
+				transform: translateY(-45%) scale(0.75);
 			}
 		}
 
@@ -62,7 +62,7 @@ outline-input-component
 			& + label
 			{
 				color: $error;
-				transform: translateY(-190%) scale(0.75);
+				transform: translateY(-45%) scale(0.75);
 			}
 		}
 	}
@@ -70,10 +70,10 @@ outline-input-component
 	label
 	{
 		position: absolute;
-		top: 50%;
+		top: 0;
 		left: 0.75rem;
 		padding: 0 0.25rem;
-		transform: translateY(-50%);
+		transform: translateY(1.125rem);
 		transform-origin: left center;
 		user-select: none;
 		pointer-events: none;
