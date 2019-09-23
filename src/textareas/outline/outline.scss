@@ -12,7 +12,7 @@ outline-textarea-component
 
 	textarea
 	{
-		min-height: 56px;
+		min-height: 3.5rem;
 		min-width: 256px;
 		width: 100%;
 		font-size: 1rem;
@@ -30,7 +30,7 @@ outline-textarea-component
 		{
 			& + label
 			{
-				transform: translateY(-48%) scale(0.75);
+				transform: translateY(-45%) scale(0.75);
 			}
 		}
 
@@ -52,7 +52,7 @@ outline-textarea-component
 			& + label
 			{
 				color: $primary;
-				transform: translateY(-48%) scale(0.75);
+				transform: translateY(-45%) scale(0.75);
 			}
 		}
 
@@ -63,7 +63,7 @@ outline-textarea-component
 			& + label
 			{
 				color: $error;
-				transform: translateY(-48%) scale(0.75);
+				transform: translateY(-45%) scale(0.75);
 			}
 		}
 	}

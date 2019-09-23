@@ -13,7 +13,7 @@ solid-input-component
 
 	input
 	{
-		height: 56px;
+		height: 3.5rem;
 		min-width: 256px;
 		font-size: 1rem;
 		border-radius: 0.25rem 0.25rem 0 0;
@@ -31,7 +31,7 @@ solid-input-component
 		{
 			& + label
 			{
-				transform: translateY(-130%) scale(0.75);
+				transform: translateY(0.125rem) scale(0.75);
 			}
 		}
 
@@ -54,7 +54,7 @@ solid-input-component
 			& + label
 			{
 				color: $primary;
-				transform: translateY(-130%) scale(0.75);
+				transform: translateY(0.125rem) scale(0.75);
 			}
 		}
 
@@ -65,7 +65,7 @@ solid-input-component
 			& + label
 			{
 				color: $error;
-				transform: translateY(-130%) scale(0.75);
+				transform: translateY(0.125rem) scale(0.75);
 			}
 		}
 	}
@@ -73,10 +73,10 @@ solid-input-component
 	label
 	{
 		position: absolute;
-		top: 50%;
+		top: 0;
 		left: 0.75rem;
 		padding: 0 0.25rem;
-		transform: translateY(-50%);
+		transform: translateY(1.125rem);
 		transform-origin: left center;
 		user-select: none;
 		pointer-events: none;
