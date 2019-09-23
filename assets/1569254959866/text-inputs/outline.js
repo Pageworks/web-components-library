@@ -1,4 +1,4 @@
-class SolidInputComponent extends HTMLElement {
+class OutlineInputComponent extends HTMLElement {
     constructor() {
         super();
         this.handleBlurEvent = this.validate.bind(this);
@@ -11,7 +11,7 @@ class SolidInputComponent extends HTMLElement {
         else {
             this._input.classList.add('has-value');
         }
-        if (!this._input.validity.valid) {
+        if (!this._input.validity.valid && !this._input.classList.contains('is-invalid')) {
             this._input.classList.add('is-invalid');
             this._input.reportValidity();
         }
@@ -23,4 +23,4 @@ class SolidInputComponent extends HTMLElement {
         this._input.addEventListener('blur', this.handleBlurEvent);
     }
 }
-customElements.define('solid-input-component', SolidInputComponent);
+customElements.define('outline-input-component', OutlineInputComponent);

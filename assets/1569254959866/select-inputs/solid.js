@@ -1,4 +1,4 @@
-class OutlineSelectComponent extends HTMLElement {
+class SolidSelectComponent extends HTMLElement {
     constructor() {
         super();
         this.handleBlurEvent = this.validate.bind(this);
@@ -11,7 +11,7 @@ class OutlineSelectComponent extends HTMLElement {
         else {
             this._select.classList.add('has-value');
         }
-        if (!this._select.validity.valid) {
+        if (!this._select.validity.valid && !this._select.classList.contains('is-invalid')) {
             this._select.classList.add('is-invalid');
             this._select.reportValidity();
         }
@@ -23,4 +23,4 @@ class OutlineSelectComponent extends HTMLElement {
         this._select.addEventListener('blur', this.handleBlurEvent);
     }
 }
-customElements.define('outline-select-component', OutlineSelectComponent);
+customElements.define('solid-select-component', SolidSelectComponent);
