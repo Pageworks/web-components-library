@@ -21,7 +21,7 @@ class SolidSelectComponent extends HTMLElement
 			this._select.classList.add('has-value');
 		}
 
-		if (!this._select.validity.valid)
+		if (!this._select.validity.valid && !this._select.classList.contains('is-invalid'))
 		{
 			this._select.classList.add('is-invalid');
 			this._select.reportValidity();
