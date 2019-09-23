@@ -1,0 +1,87 @@
+$primary: #4a99ff;
+$grey-1: #E1E1E1;
+$grey-2: #CFCFCF;
+$background: #fff;
+$font: #333333;
+$error: #f86a6a;
+
+outline-textarea-component
+{
+	display: inline-block;
+	width: 100%;
+
+	textarea
+	{
+		min-height: 56px;
+		min-width: 256px;
+		width: 100%;
+		font-size: 1rem;
+		border-radius: 0.25rem;
+		border-width: 1px;
+		border-style: solid;
+		padding: 0.875rem 1rem;
+		text-overflow: ellipsis;
+		transition: all 75ms ease-in-out;
+		
+		// Config
+		border-color: $grey-1;
+
+		&.has-value
+		{
+			& + label
+			{
+				transform: translateY(-48%) scale(0.75);
+			}
+		}
+
+		&:hover
+		{
+			border-color: $grey-2;
+
+			& + label
+			{
+				color: rgba($font, 0.87);
+			}
+		}
+
+		&:focus
+		{
+			border-color: $primary;
+			border-width: 2px;
+
+			& + label
+			{
+				color: $primary;
+				transform: translateY(-48%) scale(0.75);
+			}
+		}
+
+		&.is-invalid
+		{
+			border-color: $error;
+
+			& + label
+			{
+				color: $error;
+				transform: translateY(-48%) scale(0.75);
+			}
+		}
+	}
+
+	label
+	{
+		position: absolute;
+		top: 0;
+		left: 0.75rem;
+		padding: 0 0.25rem;
+		transform: translateY(1rem);
+		transform-origin: left center;
+		user-select: none;
+		pointer-events: none;
+		transition: all 75ms ease-in-out;
+
+		// Config
+		background-color: $background;
+		color: rgba($font, 0.6);
+	}
+}
