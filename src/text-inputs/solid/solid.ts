@@ -21,7 +21,7 @@ class SolidInputComponent extends HTMLElement
 			this._input.classList.add('has-value');
 		}
 
-		if (!this._input.validity.valid)
+		if (!this._input.validity.valid && !this._input.classList.contains('is-invalid'))
 		{
 			this._input.classList.add('is-invalid');
 			this._input.reportValidity();
