@@ -5,6 +5,10 @@
 		"raised-solid-primary",
 		"solid-primary"
 	],
+	"checkbox-inputs": [
+		"checkbox",
+		"lightswitch"
+	],
 	"grids": [
 		"form",
 		"grid"

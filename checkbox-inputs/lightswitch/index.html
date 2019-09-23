@@ -139,16 +139,19 @@
                 <demo-wrapper>
                     <!-- Demo HTML -->
                     <script type="module">
-	stylesheets = [...stylesheets, 'text-inputs/outline'];
-</script>
-<script type="module">
-	components = [...components, 'text-inputs/outline'];
+	stylesheets = [...stylesheets, 'checkbox-inputs/lightswitch'];
 </script>
 
-<outline-input-component>
-	<input id="outline-input-component" type="text" required />
-	<label for="outline-input-component">Username</label>
-</outline-input-component>
+<lightswitch-component>
+	<input type="checkbox" id="lightswitch-component" />
+	<label for="lightswitch-component">
+		<lightswitch-icon>
+			<lightswitch-track></lightswitch-track>
+			<lightswitch-knob></lightswitch-knob>
+		</lightswitch-icon>
+		<span>Click to toggle</span>
+	</label>
+</lightswitch-component>
                 </demo-wrapper>
             </demo-view>
             <source-view-component>
