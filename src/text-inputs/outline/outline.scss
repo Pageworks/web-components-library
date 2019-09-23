@@ -8,12 +8,12 @@ $error: #f86a6a;
 outline-input-component
 {
 	display: inline-block;
-	width: 100%;
 
 	input
 	{
 		height: 3.5rem;
 		min-width: 256px;
+		width: 100%;
 		font-size: 1rem;
 		border-radius: 0.25rem;
 		border-width: 1px;
