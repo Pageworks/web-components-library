@@ -1,0 +1,2 @@
+/** src/buttons/solid-primary/solid-primary.scss  */
+solid-primary{display:inline-block;height:2.25rem;line-height:2.125rem;padding:0 1rem;border-radius:0.125rem;border-width:1px;border-style:solid;text-transform:uppercase;font-weight:500;user-select:none;cursor:pointer;font-size:0.875rem;min-width:5rem;transition:background-color 75ms ease;border-color:#4a99ff;background-color:#4a99ff;color:#fff}solid-primary:hover{background-color:#66a8ff;border-color:#66a8ff}solid-primary:active{background-color:#338bff;border-color:#338bff}

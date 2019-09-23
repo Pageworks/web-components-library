@@ -1,0 +1,16 @@
+{
+	"buttons": [
+		"alt-outline-primary",
+		"outline-primary",
+		"raised-solid-primary",
+		"solid-primary"
+	],
+	"grids": [
+		"form",
+		"grid"
+	],
+	"text-inputs": [
+		"outline",
+		"solid"
+	]
+}
