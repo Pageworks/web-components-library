@@ -14,7 +14,7 @@
     "build": "npm run compile && npm run preview",
     "compile": "tsc && node ./compiler.config.js",
     "preview": "http-server ./build/",
-    "deploy": "node ./deploy.config.js",
+    "deploy": "gh-pages -d build",
     "create": "node ./generator.config.js"
   },
   "devDependencies": {
