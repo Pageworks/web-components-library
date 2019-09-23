@@ -9,6 +9,10 @@
 		"form",
 		"grid"
 	],
+	"select-inputs": [
+		"outline",
+		"solid"
+	],
 	"text-inputs": [
 		"outline",
 		"solid"
