@@ -139,20 +139,16 @@
                 <demo-wrapper>
                     <!-- Demo HTML -->
                     <script type="module">
-	stylesheets = [...stylesheets, 'checkbox-inputs/checkbox'];
+	stylesheets = [...stylesheets, 'radio-inputs/radio'];
 </script>
 
-<checkbox-component>
-	<input type="checkbox" id="checkbox-component" />
-	<label for="checkbox-component">
-		<checkbox-icon aria-label="square checkbox icon">
-			<svg viewBox="0 0 24 24" aria-hidden="true">
-				<path stroke="currentColor" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
-			</svg>
-		</checkbox-icon>
-		<span>Click to check the box</span>
+<radio-component>
+	<input type="radio" id="radio-component">
+	<label for="radio-component">
+		<radio-icon aria-label="round radio icon"></radio-icon>
+		<span>Click to select the radio input</span>
 	</label>
-</checkbox-component>
+</radio-component>
                 </demo-wrapper>
             </demo-view>
             <source-view-component>

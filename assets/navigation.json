@@ -13,6 +13,9 @@
 		"form",
 		"grid"
 	],
+	"radio-inputs": [
+		"radio"
+	],
 	"select-inputs": [
 		"outline",
 		"solid"
