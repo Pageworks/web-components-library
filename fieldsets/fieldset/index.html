@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="is-loading" data-cachebust="1569335392604">
+<html lang="en" class="is-loading" data-cachebust="1569331258412">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -139,16 +139,56 @@
                 <demo-wrapper>
                     <!-- Demo HTML -->
                     <script type="module">
-	stylesheets = [...stylesheets, 'textareas/outline'];
-</script>
-<script type="module">
-	components = [...components, 'textareas/outline'];
+	stylesheets = [...stylesheets, 'fieldsets/fieldset'];
 </script>
 
-<outline-textarea-component>
-	<textarea id="outline-textarea-component" rows="5" required></textarea>
-	<label for="outline-textarea-component">Message</label>
-</outline-textarea-component>
+<fieldset class="fieldset-component">
+	<legend>Pets You Own</legend>
+	<checkbox-component>
+		<input type="checkbox" id="dog" name="pets" />
+		<label for="dog">
+			<checkbox-icon aria-label="square checkbox icon">
+				<svg viewBox="0 0 24 24" aria-hidden="true">
+					<path stroke="currentColor" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+				</svg>
+			</checkbox-icon>
+			<span>Dog</span>
+		</label>
+	</checkbox-component>
+	<checkbox-component>
+		<input type="checkbox" id="cat" name="pets" />
+		<label for="cat">
+			<checkbox-icon aria-label="square checkbox icon">
+				<svg viewBox="0 0 24 24" aria-hidden="true">
+					<path stroke="currentColor" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+				</svg>
+			</checkbox-icon>
+			<span>Cat</span>
+		</label>
+	</checkbox-component>
+	<checkbox-component>
+		<input type="checkbox" id="goldfish" name="pets" />
+		<label for="goldfish">
+			<checkbox-icon aria-label="square checkbox icon">
+				<svg viewBox="0 0 24 24" aria-hidden="true">
+					<path stroke="currentColor" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+				</svg>
+			</checkbox-icon>
+			<span>Goldfish</span>
+		</label>
+	</checkbox-component>
+	<checkbox-component>
+		<input type="checkbox" id="hamster" name="pets" />
+		<label for="hamster">
+			<checkbox-icon aria-label="square checkbox icon">
+				<svg viewBox="0 0 24 24" aria-hidden="true">
+					<path stroke="currentColor" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+				</svg>
+			</checkbox-icon>
+			<span>Hamster</span>
+		</label>
+	</checkbox-component>
+</fieldset>
                 </demo-wrapper>
             </demo-view>
             <source-view-component>

@@ -9,6 +9,10 @@
 		"checkbox",
 		"lightswitch"
 	],
+	"fieldsets": [
+		"outline",
+		"solid"
+	],
 	"grids": [
 		"form",
 		"grid"
