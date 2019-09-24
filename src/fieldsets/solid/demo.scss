@@ -1,9 +1,8 @@
 $primary: #4a99ff;
 $primary-hover-opacity: rgba(74, 153, 255, 0.05);
 $primary-active-opacity: rgba(74, 153, 255, 0.1);
-$white: #fff;
 
-checkbox-component
+radio-component
 {
 	display: block;
 	width: 100%;
@@ -19,16 +18,13 @@ checkbox-component
 
         &:checked{
             & + label{
-                checkbox-icon{    
+                radio-icon{    
                     border-color: $primary;
-                    background-color: $primary;
 
-                    svg{
-                        path{
-                            stroke-dashoffset: 0;
-                            transition: all 175ms ease-in;
-                        }
-                    }
+                    &:after
+					{
+						transform: scale(1);
+					}
                 }
             }
         }
@@ -37,41 +33,49 @@ checkbox-component
 	label
 	{
 		width: 100%;
-		min-width: 256px;
 		cursor: pointer;
 		padding-left: 2.75rem;
-		display: flex;
+		display: inline-flex;
 		align-items: center;
 		flex-flow: row nowrap;
-		user-select: none;
 
 		&:hover
 		{
-			checkbox-icon
+			radio-icon
 			{
 				&:before{
 					transform: scale(0.87);
+				}
+
+				&:after
+				{
+					transform: scale(1);
 				}
 			}
 		}
 
 		&:active
 		{
-			checkbox-icon
+			radio-icon
 			{
 				&:before{
 					transform: scale(1);
 					background-color: $primary-active-opacity;
 					transition: all 75ms ease-in-out;
 				}
+
+				&:after
+				{
+					transform: scale(1);
+				}
 			}
 		}
 
-		checkbox-icon
+		radio-icon
 		{
-			width: 18px;
-			height: 18px;
-			border-radius: 0.125rem;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
 			border-width: 2px;
 			border-style: solid;
 			border-color: $primary;
@@ -97,19 +101,17 @@ checkbox-component
 				transition: all 75ms ease-in-out;
 			}
 
-			svg
+			&::after
 			{
-				position: absolute;
-                width: 12px;
-                height: 12px;
-                color: $white;
-                
-                path{
-                    stroke-width: 3.5px;
-                    stroke-dasharray: 30;
-                    stroke-dashoffset: 30;
-                    transition: all 150ms ease-out;
-                }
+				content: "";
+				display: inline-block;
+				width: 0.625rem;
+				height: 0.625rem;
+				border-radius: 50%;
+				background-color: $primary;
+				transform-origin: center;
+				transition: all 150ms ease-in-out;
+				transform: scale(0);
 			}
 		}
 

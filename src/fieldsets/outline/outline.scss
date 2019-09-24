@@ -1,0 +1,47 @@
+$primary: #4a99ff;
+$grey-1: #E1E1E1;
+$background: #fff;
+$border-radius: 0.25rem;
+
+.outline-fieldset
+{
+	display: inline-block;
+	width: 100%;
+	min-width: 256px;
+	padding: 1.5rem 1rem 1rem;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: $border-radius;
+	border-color: $grey-1;
+
+	legend
+	{
+		padding: 0 0.5rem;
+		background-color: $background;
+		position: absolute;
+		top: -0.625rem;
+		left: 0.5rem;
+		margin: 0;
+		user-select: none;
+	}
+
+	p
+	{
+		display: block;
+		opacity: 0.87;
+		margin-bottom: 1rem;
+		padding: 0 0.25rem;
+		font-size: 0.875rem;
+		user-select: none;
+	}
+
+	& > *
+	{
+		margin-bottom: 0.75rem;
+
+		&:last-child
+		{
+			margin-bottom: 0;
+		}
+	}
+}
