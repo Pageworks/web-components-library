@@ -37,13 +37,11 @@ checkbox-component
 	label
 	{
 		width: 100%;
-		min-width: 256px;
 		cursor: pointer;
 		padding-left: 2.75rem;
 		display: flex;
 		align-items: center;
 		flex-flow: row nowrap;
-		user-select: none;
 
 		&:hover
 		{

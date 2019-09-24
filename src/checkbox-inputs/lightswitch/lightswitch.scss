@@ -48,7 +48,8 @@ lightswitch-component
 		padding-left: 3.5rem;
 		display: flex;
 		align-items: center;
-		flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        user-select: none;
 
 		&:hover
 		{

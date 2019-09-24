@@ -4,7 +4,7 @@ $primary-active-opacity: rgba(74, 153, 255, 0.1);
 
 radio-component
 {
-	display: inline-block;
+	display: block;
 	width: 100%;
 
 	input{
@@ -32,14 +32,13 @@ radio-component
 	
 	label
 	{
-        min-height: 3.5rem;
 		width: 100%;
-		min-width: 256px;
 		cursor: pointer;
 		padding-left: 2.75rem;
 		display: flex;
 		align-items: center;
 		flex-flow: row nowrap;
+		user-select: none;
 
 		&:hover
 		{
