@@ -86,7 +86,7 @@ class Generator
                                     }
 
                                     const today = new Date();
-                                    const changelogData = `## ${ today.getFullYear() }-${ today.getMonth() }-${ today.getDay() }\n\n### Added\n\n- Adds: ${ kebabName.replace(/\-/g, ' ') } component\n`;
+                                    const changelogData = `## ${ today.getFullYear() }-${ (today.getMonth() + 1 < 10) ? '0' + (today.getMonth() + 1) : (today.getMonth() + 1) }-${ (today.getDate() < 10) ? '0' + today.getDate() : today.getDate() }\n\n### Added\n\n- Adds: ${ kebabName.replace(/\-/g, ' ') } component\n`;
                                     fs.writeFile(`src/${ category }/${ kebabName }/changelog.md`, changelogData, (error) => {
                                         if (error)
                                         {
