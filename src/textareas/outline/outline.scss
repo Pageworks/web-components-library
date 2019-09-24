@@ -4,6 +4,7 @@ $grey-2: #CFCFCF;
 $background: #fff;
 $font: #333333;
 $error: #f86a6a;
+$border-radius: 0.25rem;
 
 outline-textarea-component
 {
@@ -16,7 +17,7 @@ outline-textarea-component
 		min-width: 256px;
 		width: 100%;
 		font-size: 1rem;
-		border-radius: 0.25rem;
+		border-radius: $border-radius;
 		border-width: 1px;
 		border-style: solid;
 		padding: 0.875rem 1rem;

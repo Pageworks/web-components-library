@@ -5,6 +5,7 @@ $grey-3: #F0F0F0;
 $grey-4: #B1B1B1;
 $font: #333333;
 $error: #f86a6a;
+$border-radius: 0.25rem;
 
 solid-input-component
 {
@@ -17,7 +18,7 @@ solid-input-component
 		min-width: 256px;
 		width: 100%;
 		font-size: 1rem;
-		border-radius: 0.25rem 0.25rem 0 0;
+		border-radius: $border-radius $border-radius 0 0;
 		border-width: 0 0 1px 0;
 		border-style: solid;
 		padding: 1.5rem 1rem 0.5rem;
